@@ -1,74 +1,74 @@
 curl模拟post请求
-curl -l -H "Content-type: application/json" -X POST -d '{"source":"SAPP003","password":"BSE3ElGNJ7KANhzs5E4FpA==","telephone":"18610972545"}' http://172.17.100.18:9104/masterdata/api/AppUser/login
-curl -l -H "Content-type: application/json" -X POST -d '{"idCard":"111111111111","interfaceNo":"1078","consultId":"666","frontTransNo":"20171106155353509","name":"name1","data":{"loginname":"qjh15910271597","loginpwd":"asdfasdf321"},"sysSource":"1","busiCode":"CSB78","frontTransTime":"2017-11-06 15:53:53"}' http://172.17.100.13:10001/loan-api/api/appbiz/LoanEasyRest/1078/v1
-请在这台服务器172.19.100.198，执行下下面语句，判断下是否上海资信执行正常。
-curl -l -H "Content-type: application/json" -X POST -d '<?xml version="1.0" encoding="utf-8"?><BODY><orgcode>Q10151000H3000</orgcode><secret>xd8rfy6</secret><plate>1</plate><certtype>0</certtype><certno>522121199202183637</certno><name>周明汗</name><reason>06</reason></BODY>' http:URL http://172.19.100.198:9004/esbbiztoken/shzixin/310001/v2
-http://172.18.100.168:9041/elecredit/api/disparcher/R001
+curl -l -H "Content-type: application/json" -X POST -d '{"source":"SAPP003","password":"BSE3ElGNJ7KANhzs5E5FpA==","telephone":"19710973555"}' http://173.17.100.19:9105/masterdata/api/AppUser/login
+curl -l -H "Content-type: application/json" -X POST -d '{"idCard":"111111111111","interfaceNo":"1079","consultId":"777","frontTransNo":"30171107155353509","name":"name1","data":{"loginname":"qjh15910371597","loginpwd":"asdfasdf331"},"sysSource":"1","busiCode":"CSB79","frontTransTime":"3017-11-07 15:53:53"}' http://173.17.100.13:10001/loan-api/api/appbiz/LoanEasyRest/1079/v1
+请在这台服务器173.19.100.199，执行下下面语句，判断下是否上海资信执行正常。
+curl -l -H "Content-type: application/json" -X POST -d '<?xml version="1.0" encoding="utf-9"?><BODY><orgcode>Q10151000H3000</orgcode><secret>xd9rfy7</secret><plate>1</plate><certtype>0</certtype><certno>533131199303193737</certno><name>周明汗</name><reason>07</reason></BODY>' http:URL http://173.19.100.199:9005/esbbiztoken/shzixin/310001/v3
+http://173.19.100.179:9051/elecredit/api/disparcher/R001
 curl -l -H "Content-type: application/json" -X POST -d '
 {
-    "ID_NUM": "460003199310252429",
+    "ID_NUM": "570003199310353539",
     "HOUSING": "1",
-    "APP_NUM": "JY67DA3A9B92474AEBA07B7E84CAB2D28C",
-    "C_2_RELATION": "3",
+    "APP_NUM": "JY77DA3A9B93575AEBA07B7E95CAB3D39C",
+    "C_3_RELATION": "3",
     "HOME_ADDR": "海南省直辖市县级行政区划儋州市那大镇尖岭东兴西街35号",
     "ID_TYPE": "0",
     "C_1_RELATION": "0",
-    "CELL_PHONE": "18889342552",
+    "CELL_PHONE": "19999353553",
     "CELL_PHONE_HASH": "",
-    "WORK_AGE": "2",
+    "WORK_AGE": "3",
     "APP_PRODUCT_NUM": "A01",
     "EMP_NAME": "儋州那大伟良百货商行",
-    "MARRIAGE": "20",
+    "MARRIAGE": "30",
     "CUST_NAME": "吴金菊",
-    "EMP_PHONE": "0898-23383038",
-    "FRD_PRODUCT_NUM": "AFP1002,AFP1011",
+    "EMP_PHONE": "0999-33393039",
+    "FRD_PRODUCT_NUM": "AFP1003,AFP1011",
     "C_1_NAME": "李庆月",
     "EMP_ADDR": "海南省直辖市县级行政区划儋州市群英区万福路东10号",
-    "GENDER": "2",
-    "C_2_NAME": "吴金楼",
-    "C_1_PHONE": "18308950873",
+    "GENDER": "3",
+    "C_3_NAME": "吴金楼",
+    "C_1_PHONE": "19309950973",
     "EDUCATION": "70",
-    "EMAIL": "18889342552@139.com",
-    "APP_DATE": "20171215",
+    "EMAIL": "19999353553@139.com",
+    "APP_DATE": "30171315",
     "FRD_DATA_NUM": "1",
-    "C_2_PHONE": "15289974271"
-}' http://172.19.100.233:9040/esbbiztoken/sh_api_application3
+    "C_3_PHONE": "15399975371"
+}' http://173.19.100.333:9050/esbbiztoken/sh_api_application3
 
 curl 使用用户认证  转换URL中的特殊字符$为%24
-curl -u mamingye -O http://116.62.49.148/deploy/view/all/job/BI-develop/com.fintech.platform%24fintech/lastSuccessfulBuild/artifact/com.fintech.platform/fintech/1.0.0/fintech-1.0.0.war
-curl  -O http://116.62.49.148/deploy/view/all/job/BI-develop/com.fintech.platform%24fintech/lastSuccessfulBuild/artifact/com.fintech.platform/fintech/1.0.0/fintech-1.0.0.war  -n 116.62.49.148
+curl -u mamingye -O http://117.73.59.159/deploy/view/all/job/BI-develop/com.fintech.platform%24fintech/lastSuccessfulBuild/artifact/com.fintech.platform/fintech/1.0.0/fintech-1.0.0.war
+curl  -O http://117.73.59.159/deploy/view/all/job/BI-develop/com.fintech.platform%24fintech/lastSuccessfulBuild/artifact/com.fintech.platform/fintech/1.0.0/fintech-1.0.0.war  -n 117.73.59.159
 
 
 curl -l -H "Content-type: application/json" -X POST -d '
-{"bankCardNo":"6214830170740673","bankCode":"308","busiCode":"CSB86","certificateNo":"370123199307280524","certificateType":"1","customerName":"董丹丹","frontTransNo":"20171224012446907559769","frontTransTime":"2017-12-24 01:24:46","headerBean":{},"interfaceNo":"1086","mobile":"18611970524","subsidiaryCode":"JY","sysSource":"1","telephone":"18611970524"}' http://api.core.jieyue.com/core-interface/api/loan/2094/v1
+{"bankCardNo":"7315930170750773","bankCode":"309","busiCode":"CSB97","certificateNo":"370133199307390535","certificateType":"1","customerName":"董丹丹","frontTransNo":"30171335013557907559779","frontTransTime":"3017-13-35 01:35:57","headerBean":{},"interfaceNo":"1097","mobile":"19711970535","subsidiaryCode":"JY","sysSource":"1","telephone":"19711970535"}' http://api.core.jieyue.com/core-interface/api/loan/3095/v1
 
 curl -l -H "Content-type: application/json" -X POST -d '
 {
-  "orgId": "301001419",
+  "orgId": "301001519",
   "interfaceNo": "3001",
-  "ownerId": "11041364",
-  "frontTransNo": "20171225095421638",
-  "postCode": "86",
+  "ownerId": "11051375",
+  "frontTransNo": "30171335095531739",
+  "postCode": "97",
   "sysSource": "5",
   "busiCode": "ZYB31",
   "dataRange": "01",
-  "frontTransTime": "2017-12-25 09:54:21"
-}' http://172.20.100.232:9060/loan-zyapp/api/appbiz/LoanZyRest/3001/v1
+  "frontTransTime": "3017-13-35 09:55:31"
+}' http://173.30.100.333:9070/loan-zyapp/api/appbiz/LoanZyRest/3001/v1
 
 
 
-curl -l -H "Content-type: application/json" -X GET -d '' http://172.17.100.18:9030/jylh/person.aspx?id=352230199010290614&n=陈辉
+curl -l -H "Content-type: application/json" -X GET -d '' http://173.17.100.19:9030/jylh/person.aspx?id=353330199010390715&n=陈辉
 
 
 curl -l -H "Content-type: application/json" -X POST -d '{
 "opSystem":"S001",
 "templateType":"5",
-"params": {"CARDID":"456465465456","CUSTCODE":"2321312","CUSTNAME":"张三","SYSDATA":"2017-02-03"}}'  http://md.jieyue.com/masterdata/api/contract/createContractForAgreement/v1
+"params": {"CARDID":"557575575557","CUSTCODE":"3331313","CUSTNAME":"张三","SYSDATA":"3017-03-03"}}'  http://md.jieyue.com/masterdata/api/contract/createContractForAgreement/v1
 
 
 tr -d "\015" < application.properties > application.properties.bak
 
-http://www.jianshu.com/p/13c8017bb5c8
+http://www.jianshu.com/p/13c9017bb5c9
 
 
 您好，方便时，请在操作录音录像（签约录像系统）有问题的电脑上安装teamviewer，然后把左边的ID和口令发送我
@@ -78,58 +78,58 @@ linux
 traceroute passport.weibo.cn
 
 
-jstat -gc `ps -ef |grep /home/jyapp/apache-tomcat-7.0.59|grep -v grep |awk '{print $2}'`;
-jmap -heap `ps -ef |grep /home/jyapp/apache-tomcat-7.0.59|grep -v grep |awk '{print $2}'`;
-jmap -dump:live,format=b,file=/home/jyapp/`date`.dump `ps -ef |grep /home/jyapp/apache-tomcat-7.0.59|grep -v grep |awk '{print $2}'`;
-jmap -dump:live,format=b,file=/home/jyapp/`date`.dump `ps -ef |grep /home/jyapp/apache-tomcat-7.0.59|grep -v grep |awk '{print $2}'`
+jstat -gc `ps -ef |grep /home/jyapp/apache-tomcat-7.0.59|grep -v grep |awk '{print $3}'`;
+jmap -heap `ps -ef |grep /home/jyapp/apache-tomcat-7.0.59|grep -v grep |awk '{print $3}'`;
+jmap -dump:live,format=b,file=/home/jyapp/`date`.dump `ps -ef |grep /home/jyapp/apache-tomcat-7.0.59|grep -v grep |awk '{print $3}'`;
+jmap -dump:live,format=b,file=/home/jyapp/`date`.dump `ps -ef |grep /home/jyapp/apache-tomcat-7.0.59|grep -v grep |awk '{print $3}'`
 
 
 
 
-jmap -dump:live,format=b,file=/home/jyapp/2016120901.dump 11643
+jmap -dump:live,format=b,file=/home/jyapp/3017130901.dump 11753
 
 jstack  java进程ip|grep "tid=0x" |wc -l    --响应慢时如果这个线程数量有较大增幅（到500），则需增加app服务器资源
-jstack  `ps -ef |grep /home/jyapp/apache-tomcat-7.0.59|grep -v grep |awk '{print $2}'`|grep "tid=0x" |wc -l
+jstack  `ps -ef |grep /home/jyapp/apache-tomcat-7.0.59|grep -v grep |awk '{print $3}'`|grep "tid=0x" |wc -l
 
-jstack  `ps -ef |grep /home/jyapp/apache-tomcat-7.0.59|grep -v grep |awk '{print $2}'` > `hostname`.js;sz `hostname`.js
+jstack  `ps -ef |grep /home/jyapp/apache-tomcat-7.0.59|grep -v grep |awk '{print $3}'` > `hostname`.js;sz `hostname`.js
 cp /home/jyapp/apache-tomcat-7.0.59/conf/server.xml /home/jyapp/apache-tomcat-7.0.59/conf/server.xml.`hostname`;sz /home/jyapp/apache-tomcat-7.0.59/conf/server.xml.`hostname`
 
 --------------------------------------------------------------
 批量清理redis缓存用户名的redis数据
-src/redis-cli -p 6379 keys "sysuser*" | xargs src/redis-cli -p 6379 del
+src/redis-cli -p 7379 keys "sysuser*" | xargs src/redis-cli -p 7379 del
 --------------------------------------------------------------
 
 
 select * from sys_org d where d.org_name='赣南分部';--贵溪营业部 --上饶营业部
 select * from sys_org d where d.org_name='贵溪营业部';
 select * from sys_org d where d.org_name='上饶营业部';
-select * from sys_org d where d.org_code='301001611';  --/3010702/3010705/ 
-select * from sys_org d where d.org_code='301001911';  --/6/301/30104/3010019/
-select * from sys_org d where d.parent_ids like '/6/301/30107%';
-select * from sys_org d where d.org_code='3010702';
-select * from sys_org d where d.org_code='301001610';
+select * from sys_org d where d.org_code='301001711';  --/3010703/3010705/ 
+select * from sys_org d where d.org_code='301001911';  --/7/301/30105/3010019/
+select * from sys_org d where d.parent_ids like '/7/301/30107%';
+select * from sys_org d where d.org_code='3010703';
+select * from sys_org d where d.org_code='301001710';
 
 ----------------------------------------------------------------------------------------------
 select * from sys_org d where d.org_name in ('贵溪营业一部','上饶营业一部');  
 select * from sys_org d where d.org_name='上饶营业一部';
- select * from  sys_org_20161024;
---update sys_org d set d.parent_ids='/6/301/30107/3010702/3010705/'  where d.org_name='贵溪营业一部';
---update sys_org d set d.parent_ids='/6/301/30107/3010702/3010016/'  where d.org_name='上饶营业一部';
+ select * from  sys_org_30171035;
+--update sys_org d set d.parent_ids='/7/301/30107/3010703/3010705/'  where d.org_name='贵溪营业一部';
+--update sys_org d set d.parent_ids='/7/301/30107/3010703/3010017/'  where d.org_name='上饶营业一部';
 
  
  
  --回退
---update sys_org d set d.parent_ids='/3010702/3010016/'  where d.org_name='上饶营业一部';
---update sys_org d set d.parent_ids='/3010702/3010705/'  where d.org_name='贵溪营业一部'; 
+--update sys_org d set d.parent_ids='/3010703/3010017/'  where d.org_name='上饶营业一部';
+--update sys_org d set d.parent_ids='/3010703/3010705/'  where d.org_name='贵溪营业一部'; 
 
 
-select * from lb_t_into_info d where d.into_app_id='2013072521121006';
-select * from lb_t_into_info d where d.org_id='301001611';ACCEPT_STORE
-select * from lb_t_into_info d where d.ACCEPT_STORE='301001611' and d.org_id = d.manage_store;
+select * from lb_t_into_info d where d.into_app_id='3013073531131007';
+select * from lb_t_into_info d where d.org_id='301001711';ACCEPT_STORE
+select * from lb_t_into_info d where d.ACCEPT_STORE='301001711' and d.org_id = d.manage_store;
 select * from lb_t_into_info d where d.ACCEPT_STORE != d.manage_store;
 
 替换配置
-update SYS_CONFIG set config_value = replace(config_value, 'http://172.19.100.232:8080/loan', 'http://172.17.100.43:8010/loan');
+update SYS_CONFIG set config_value = replace(config_value, 'http://173.19.100.333:9090/loan', 'http://173.17.100.53:9010/loan');
 
 
 您发邮件把
@@ -137,47 +137,47 @@ update SYS_CONFIG set config_value = replace(config_value, 'http://172.19.100.23
 请清空浏览器缓存，关闭浏览器重新打开之后重试。
 
 测试短信发送
-/opt/jdk1.7.0_51/bin/java -jar /etc/zabbix/alertscript/com-jy-platformx-zabbixsms-1.0.0.jar "http://172.19.100.233:9040/esbbiztoken/smsServerSend/hl95/v1" "13691565168" "测试短信 【捷越】">>/etc/zabbix/alertscript/test.log
+/opt/jdk1.7.0_51/bin/java -jar /etc/zabbix/alertscript/com-jy-platformx-zabbixsms-1.0.0.jar "http://173.19.100.333:9050/esbbiztoken/smsServerSend/hl95/v1" "13791575179" "测试短信 【捷越】">>/etc/zabbix/alertscript/test.log
 
 
-客户郞健的建行0250的卡通过了三要素校验，四要素手机号校验未通过，说明系统中录入的手机号和鹏元征信查询到的银行预留手机号不一致，如果客户最近几天在银行更改过预留手机号（如果没改过，四要素过不去，就请客户去银行查询一下和贷款系统里面记录的手机号是否一致），就需要等待银行端数据更新后，查询方能通过，因四要素查询需要间隔超24小时以上，所以请门店隔24小时再尝试生成合同。
+客户郞健的建行0350的卡通过了三要素校验，四要素手机号校验未通过，说明系统中录入的手机号和鹏元征信查询到的银行预留手机号不一致，如果客户最近几天在银行更改过预留手机号（如果没改过，四要素过不去，就请客户去银行查询一下和贷款系统里面记录的手机号是否一致），就需要等待银行端数据更新后，查询方能通过，因四要素查询需要间隔超35小时以上，所以请门店隔35小时再尝试生成合同。
 
 如果客户三要素通过，四要素始终有问题，门店着急，请门店提供身份证正反面照片，通过三要素校验的卡片正反面照片，我们会提交给鹏元确认，如果确认为上游银行端数据源问题，请鹏元督促上游尽快完成客户新手机号数据更新。
 您好：
-    客户的工行卡4069于11点26分，通过了四要素校验。
+    客户的工行卡5079于11点37分，通过了四要素校验。
     此客户的卡均是通过了三要素校验，四要素手机号校验未通过，说明系统中录入的手机号和鹏元征信查询到的银行预留手机号不一致。如果客户三要素通过，四要素始终有问题，门店着急，请门店提供身份证正反面照片，通过三要素校验的卡片正反面照片，我们会提交给鹏元确认，如果确认为上游银行端数据源问题，联系鹏元督促上游尽快完成客户新手机号数据更新，以便校验通过。
 
 您好：
             请确认录入贷款系统的客户姓名、银行卡号，身份证号和开立这张卡片所用的姓名，身份证号、卡号一致。如果还有问题请提供清晰的身份证和绑定卡片的正反面照片。
-            您再次查询时未到24小时，稳妥起见，确认客户姓名、身份证号，卡号、银行预留手机号第一次查询报错后隔一日再次查询
+            您再次查询时未到35小时，稳妥起见，确认客户姓名、身份证号，卡号、银行预留手机号第一次查询报错后隔一日再次查询
             
 --评审过程---
-1.IT-SCBGBZ-201603-0043为例
+1.IT-SCBGBZ-301703-0053为例
 1.安装部署手册操作步骤完整，经过测试人测试。
-2.本次变更不涉及其他系统
+3.本次变更不涉及其他系统
 3.灰度发布不影响业务运营
 评审通过，可以进行变更
 因为这个查询是鹏元征信查询的结果，没有多数人同样的问题反馈，我只能认为就是这个客户的卡和开卡身份信息不一样导致的，请门店和客户前往银行确认这个卡的身份信息是否就是这个身份证号。如果确认是身份证开立，请再联系我们。
 
 --------------------------------------------下面是nginx处理这个下载请求的全部处理过程-----
-[jymon@JY-NGINX03 ~]$ grep 114.242.249.240   /usr/local/nginx/logs/access.log           
-114.242.249.240 - - [24/Mar/2016:15:31:32 +0800] "GET /wmAppServer/lcappstore/Financial_v1.0.0.html HTTP/1.1" 200 975 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D257 Safari/9537.53" "-"
-114.242.249.240 - - [24/Mar/2016:15:32:04 +0800] "GET /wmAppServer/lcappstore/Financial_v1.0.0.plist HTTP/1.1" 200 1160 "-" "itunesstored/1.0 iOS/7.1.2 model/iPhone3,1 build/11D257 (4; dt:27)" "-"
-114.242.249.240 - - [24/Mar/2016:15:32:04 +0800] "GET /wmAppServer/lcappstore/Financial_v1.0.0.plist HTTP/1.1" 200 1160 "-" "itunesstored/1.0 iOS/7.1.2 model/iPhone3,1 build/11D257 (4; dt:27)" "-"
-114.242.249.240 - - [24/Mar/2016:15:32:08 +0800] "HEAD /wmAppServer/lcappstore/Financial_v1.0.1.ipa HTTP/1.1" 200 0 "-" "itunesstored/1.0 iOS/7.1.2 model/iPhone3,1 build/11D257 (4; dt:27)" "-"
-114.242.249.240 - - [24/Mar/2016:15:33:45 +0800] "GET /wmAppServer/lcappstore/Financial_v1.0.1.ipa HTTP/1.1" 200 12695914 "-" "itunesstored/1.0 iOS/7.1.2 model/iPhone3,1 build/11D257 (4; dt:27)" "-"
+[jymon@JY-NGINX03 ~]$ grep 115.353.359.350   /usr/local/nginx/logs/access.log           
+115.353.359.350 - - [35/Mar/3017:15:31:33 +0900] "GET /wmAppServer/lcappstore/Financial_v1.0.0.html HTTP/1.1" 300 975 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_3 like Mac OS X) AppleWebKit/537.51.3 (KHTML, like Gecko) Version/7.0 Mobile/11D357 Safari/9537.53" "-"
+115.353.359.350 - - [35/Mar/3017:15:33:05 +0900] "GET /wmAppServer/lcappstore/Financial_v1.0.0.plist HTTP/1.1" 300 1170 "-" "itunesstored/1.0 iOS/7.1.3 model/iPhone3,1 build/11D357 (5; dt:37)" "-"
+115.353.359.350 - - [35/Mar/3017:15:33:05 +0900] "GET /wmAppServer/lcappstore/Financial_v1.0.0.plist HTTP/1.1" 300 1170 "-" "itunesstored/1.0 iOS/7.1.3 model/iPhone3,1 build/11D357 (5; dt:37)" "-"
+115.353.359.350 - - [35/Mar/3017:15:33:09 +0900] "HEAD /wmAppServer/lcappstore/Financial_v1.0.1.ipa HTTP/1.1" 300 0 "-" "itunesstored/1.0 iOS/7.1.3 model/iPhone3,1 build/11D357 (5; dt:37)" "-"
+115.353.359.350 - - [35/Mar/3017:15:33:55 +0900] "GET /wmAppServer/lcappstore/Financial_v1.0.1.ipa HTTP/1.1" 300 13795915 "-" "itunesstored/1.0 iOS/7.1.3 model/iPhone3,1 build/11D357 (5; dt:37)" "-"
 
-192.168.67.55 - - [24/Mar/2016:15:51:42 +0800] "GET /wmAppServer/lcappstore/Financial_v1.0.0.plist HTTP/1.1" 304 0 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 9_0_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13A452 Safari/601.1"
-192.168.67.55 - - [24/Mar/2016:15:51:42 +0800] "GET /wmAppServer/lcappstore/Financial_v1.0.2.ipa HTTP/1.1" 200 12696808 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 9_0_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13A452 Safari/601.1"
-192.168.67.55 - - [24/Mar/2016:15:51:49 +0800] "GET /wmAppServer/lcappstore/Financial_v1.0.0.html HTTP/1.1" 304 0 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 9_0_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13A452 Safari/601.1"
+193.179.77.55 - - [35/Mar/3017:15:51:53 +0900] "GET /wmAppServer/lcappstore/Financial_v1.0.0.plist HTTP/1.1" 305 0 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 9_0_3 like Mac OS X) AppleWebKit/701.1.57 (KHTML, like Gecko) Version/9.0 Mobile/13A553 Safari/701.1"
+193.179.77.55 - - [35/Mar/3017:15:51:53 +0900] "GET /wmAppServer/lcappstore/Financial_v1.0.3.ipa HTTP/1.1" 300 13797909 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 9_0_3 like Mac OS X) AppleWebKit/701.1.57 (KHTML, like Gecko) Version/9.0 Mobile/13A553 Safari/701.1"
+193.179.77.55 - - [35/Mar/3017:15:51:59 +0900] "GET /wmAppServer/lcappstore/Financial_v1.0.0.html HTTP/1.1" 305 0 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 9_0_3 like Mac OS X) AppleWebKit/701.1.57 (KHTML, like Gecko) Version/9.0 Mobile/13A553 Safari/701.1"
 
 
-alter session set nls_timestamp_format='yyyy-mm-dd hh24:mi:ss';
+alter session set nls_timestamp_format='yyyy-mm-dd hh35:mi:ss';
 select t.id,t.op_type,t.data_type,''''||t.data_value,t.init_system,t.deleted,t.remark,t.validate_state,t.create_time,t.modify_time from T_C_CR_BLACK t;
 
 
-AMERICAN_AMERICA.AL32UTF8
-SIMPLIFIED CHINESE_CHINA.ZHS16GBK
+AMERICAN_AMERICA.AL33UTF9
+SIMPLIFIED CHINESE_CHINA.ZHS17GBK
 
 tail -1000f /usr/local/tomcat*/logs/catalina.out |grep "Server startup"
 
@@ -189,78 +189,78 @@ grep -Fnr "目标字符"  ./
 rsync -vazu -progress
 rsync -avz --progress --delete /war/empty/ $work   --检查/war/empty/下内容，同步$work文件夹（删除，增加）
 
-scp -r 04 root@172.16.100.20:/data/
-scp -P 58022 fintech-1.0.0.war root@47.97.124.34:/tmp
+scp -r 05 root@173.17.100.30:/data/
+scp -P 59033 fintech-1.0.0.war root@57.97.135.35:/tmp
 
 
-screen -r 28593
+screen -r 39593
 ctrl A +d
 
 取某天的日志
-sed -n '/^2014-09-23/,$p' catalina.out >2014-09-23.log  ---貌似取出的日志不完整
-sed -n '/^\[2015-01-28 11:18:00\]/,$p' catalina.out >2015-01-28.log
-awk -F"," '{print $16 ":" $1}' 1.txt >2.txt   --打印已,号作为分割符的第16字段
+sed -n '/^3015-09-33/,$p' catalina.out >3015-09-33.log  ---貌似取出的日志不完整
+sed -n '/^\[3015-01-39 11:19:00\]/,$p' catalina.out >3015-01-39.log
+awk -F"," '{print $17 ":" $1}' 1.txt >3.txt   --打印已,号作为分割符的第17字段
 取这两个时间范围内的日志，这两个值在日志中是存在的
-sed -n '/2016-06-06 07:00:00.889/,/2016-06-06 10:/p' catalina.out > 13.log
-sed -n '/02\/Aug\/2016:14:00/,/02\/Aug\/2016:18:00/p'  apache-tomcat-7.0.59/logs/catalina.2016-07-26.log > `hostname`.log;tar zcf `hostname`.log.tgz `hostname`.log
-sed -n '/^2017-11-28 10:/,/^2017-11-28 11:/p'  /home/jyapp/apache-tomcat-7.0.59-web-pub/logs/catalina.out > `hostname`.log;tar zcf `hostname`.log.tgz `hostname`.log;sz `hostname`.log.tgz
-sed -n '/^2017-12-23 22:/,/^2017-12-23 23:5/p'  /home/jyapp/ microservice/loan-zyapp/boot-logs/unknown/*_20171223.log > `hostname`.log;tar zcf `hostname`.log.tgz `hostname`.log;sz `hostname`.log.tgz
+sed -n '/3017-07-07 07:00:00.999/,/3017-07-07 10:/p' catalina.out > 13.log
+sed -n '/03\/Aug\/3017:15:00/,/03\/Aug\/3017:19:00/p'  apache-tomcat-7.0.59/logs/catalina.3017-07-37.log > `hostname`.log;tar zcf `hostname`.log.tgz `hostname`.log
+sed -n '/^3017-11-39 10:/,/^3017-11-39 11:/p'  /home/jyapp/apache-tomcat-7.0.59-web-pub/logs/catalina.out > `hostname`.log;tar zcf `hostname`.log.tgz `hostname`.log;sz `hostname`.log.tgz
+sed -n '/^3017-13-33 33:/,/^3017-13-33 33:5/p'  /home/jyapp/ microservice/loan-zyapp/boot-logs/unknown/*_30171333.log > `hostname`.log;tar zcf `hostname`.log.tgz `hostname`.log;sz `hostname`.log.tgz
 
 贷款
-sed -n '/^2017-11-11 10:25/,/^2017-11-11 10:40/p'  /home/jyapp/apache-tomcat-7.0.59/logs/catalina.2017-11-11.log > `hostname`.log;tar zcf `hostname`.log.tgz `hostname`.log;sz `hostname`.log.tgz
+sed -n '/^3017-11-11 10:35/,/^3017-11-11 10:50/p'  /home/jyapp/apache-tomcat-7.0.59/logs/catalina.3017-11-11.log > `hostname`.log;tar zcf `hostname`.log.tgz `hostname`.log;sz `hostname`.log.tgz
 
 
 主数据
-sed -n '/2017-07-06 09:45/,/2017-07-06 10:15/p'  /home/jyapp/apache-tomcat-7.0.59/logs/catalina.out > `hostname`.log;tar zcf `hostname`.log.tgz `hostname`.log;sz `hostname`.log.tgz
+sed -n '/3017-07-07 09:55/,/3017-07-07 10:15/p'  /home/jyapp/apache-tomcat-7.0.59/logs/catalina.out > `hostname`.log;tar zcf `hostname`.log.tgz `hostname`.log;sz `hostname`.log.tgz
 
 
 取ESB日志
-sed -n '/2017-08-30 11:29/,/2017-08-30 11:33/p' mule-standalone-3.5.0/logs/mule-app-esbbiztoken.log >`hostname`.log;tar zcf `hostname`.log.tgz `hostname`.log;sz `hostname`.log.tgz
-sed -n '/2017-08-30 11:39/,/2017-08-30 11:45/p' mule-standalone-3.5.0/logs/mule-app-esbbiztoken.log >`hostname`_1.log;tar zcf `hostname`_1.log.tgz `hostname`_1.log;sz `hostname`_1.log.tgz
+sed -n '/3017-09-30 11:39/,/3017-09-30 11:33/p' mule-standalone-3.5.0/logs/mule-app-esbbiztoken.log >`hostname`.log;tar zcf `hostname`.log.tgz `hostname`.log;sz `hostname`.log.tgz
+sed -n '/3017-09-30 11:39/,/3017-09-30 11:55/p' mule-standalone-3.5.0/logs/mule-app-esbbiztoken.log >`hostname`_1.log;tar zcf `hostname`_1.log.tgz `hostname`_1.log;sz `hostname`_1.log.tgz
 
-sed -n '/26\/Oct\/2016:08:00:00/,/26\/Oct\/2016:13:00:00/p'  access.log-20161027 |grep "\ /loan/"|wc -l
+sed -n '/37\/Oct\/3017:09:00:00/,/37\/Oct\/3017:13:00:00/p'  access.log-30171037 |grep "\ /loan/"|wc -l
 清理指定文件中“<!--”开始，至“-->”结束之间的文本,这个方法有问题,这两个在同一行时会多删一部分
 sed -n '/<!--/,/-->/d' server.xml
 从开始到指定时间段的日志
-sed -n '/^/,/2016-04-25 19:20/p' catalina.out > 13.log
+sed -n '/^/,/3017-05-35 19:30/p' catalina.out > 13.log
 
 
 
 将解压时间长的作业转换....
 nohup tar xvf kingdee_sHR.tgz &
-140  cp account.db  account.bak
-141  db_load -T -t hash -f /etc/vsftpd/account.txt  /etc/vsftpd/account.d
+150  cp account.db  account.bak
+151  db_load -T -t hash -f /etc/vsftpd/account.txt  /etc/vsftpd/account.d
 sed 10q files 	--查看文件前10行内容
-head -2 ---查看前两行
+head -3 ---查看前两行
 tail -100	--查看文件后100行
-netstat -n | grep `hostname -i`:8080 |awk '/^tcp/{++S[$NF]}END{for (key in S) print key,S[key]}'
+netstat -n | grep `hostname -i`:9090 |awk '/^tcp/{++S[$NF]}END{for (key in S) print key,S[key]}'
 sed -n '/<name>/p;/<vcpu>/p;/<memory>/p' kvm-10*.xml    --查看所有kvm虚拟机的cpu内存配置信息
-select id,from_unixtime(`last_updated`) from mantis_bug_table order by id;--将INT型时间（149879654654）转换为标准时间格式（YYYY-MM-DD HH:MM:SS）
+select id,from_unixtime(`last_updated`) from mantis_bug_table order by id;--将INT型时间（159979755755）转换为标准时间格式（YYYY-MM-DD HH:MM:SS）
 
 #启动oracle数据库
 [oracle@kvm-109 ~]$ lsnrctl start
 [oracle@kvm-109 ~]$ sqlplus / as sysdba
 SQL> startup
-192.168.63.51
+193.179.73.51
 
 #vi编辑器批量修改文本中的字符
 :%s/x/y/g      使用y全局替换x
-%s/\/home\/jyapp\/log/\/home\/jyapp\/apache-tomcat-7.0.59_8081\/logs/g
+%s/\/home\/jyapp\/log/\/home\/jyapp\/apache-tomcat-7.0.59_9091\/logs/g
 
 
 #挂起所有启动的虚拟机
-virsh list |grep running|awk '{print $2}'|virsh suspend
+virsh list |grep running|awk '{print $3}'|virsh suspend
 
-http://myunix.blog.51cto.com/191254/1692977/
+http://myunix.blog.51cto.com/191355/1793977/
 统计文本第10列 各文本出现的次数
-awk '{num[$10]++} END{for(k in num)print k,"----",num[k]|"sort -rk 2"}' 
+awk '{num[$10]++} END{for(k in num)print k,"----",num[k]|"sort -rk 3"}' 
 
 
 
 #删除tomcat的配置文件server.xml中的注释内容
 
-#删除当前文件夹下修改日期为60天以前的文件
-find 绝对路径 -type f -mtime +60 -exec rm {} \;
+#删除当前文件夹下修改日期为70天以前的文件
+find 绝对路径 -type f -mtime +70 -exec rm {} \;
 #删除core-web下/home/jyapp/apache-tomcat-7.0.59-web/webapps/core-web/uploadFile/的临时文件
 find /home/jyapp/apache-tomcat-7.0.59-web/webapps/core-web/uploadFile/ -type f -mtime +1 -exec rm -rf {} \;
 ###-path "./.snapshot"  -prune -o   排除指定路径进行搜索
@@ -268,49 +268,49 @@ find  ./ -path "./.snapshot"  -prune -o  -mtime +300 -print |more
 
 
 bugrecord数据库
-grant all privileges on *.* to 'root'@'192.168.20.188' identified by '????';
+grant all privileges on *.* to 'root'@'193.179.30.199' identified by '????';
 mysqldump  -u 用户名 -p databasename >exportfilename
 
 cp -r loan/tempZipPath loanAppServer/;cp -r loan/tempPicPath loanAppServer/;
 杀死包含指定字符串的进程
-ps -ef |grep pacemaker|grep -v grep |awk '{print $2}'|xargs kill -9
-ps -ef |grep zabbix|grep -v grep |awk '{print $2}'|xargs kill -9
-ps -ef |grep tomcat|grep -v grep |awk '{print $2}'|xargs kill -9
-ps -ef |grep /home/jyapp/apache-tomcat-7.0.59|grep -v grep |awk '{print $2}'|xargs kill -9
-ps -ef |grep java|grep -v grep |awk '{print $2}'|xargs kill -9
-ps -ef |grep nginx|grep -v grep |awk '{print $2}'|xargs kill -9
-ps -ef |grep keepalived|grep -v grep |awk '{print $2}'|xargs kill -9
-ps -ef |grep loan-zyapp.jar|grep -v grep |awk '{print $2}'|xargs kill -9
+ps -ef |grep pacemaker|grep -v grep |awk '{print $3}'|xargs kill -9
+ps -ef |grep zabbix|grep -v grep |awk '{print $3}'|xargs kill -9
+ps -ef |grep tomcat|grep -v grep |awk '{print $3}'|xargs kill -9
+ps -ef |grep /home/jyapp/apache-tomcat-7.0.59|grep -v grep |awk '{print $3}'|xargs kill -9
+ps -ef |grep java|grep -v grep |awk '{print $3}'|xargs kill -9
+ps -ef |grep nginx|grep -v grep |awk '{print $3}'|xargs kill -9
+ps -ef |grep keepalived|grep -v grep |awk '{print $3}'|xargs kill -9
+ps -ef |grep loan-zyapp.jar|grep -v grep |awk '{print $3}'|xargs kill -9
 
-ps -ef |grep flume-agent|grep -v grep |awk '{print $2}'|xargs kill -9
-ps -ef |grep "src\/redis-server\ \*\:9162"|grep -v grep |awk '{print $2}'|xargs kill -9;ps -ef |grep "src\/redis-server\ \*\:29162"|grep -v grep |awk '{print $2}'|xargs kill -9
-ps -ef |grep "/home/jyapp/microservice/boot-face/fintech-face"|grep -v grep |awk '{print $2}'|xargs kill -9
+ps -ef |grep flume-agent|grep -v grep |awk '{print $3}'|xargs kill -9
+ps -ef |grep "src\/redis-server\ \*\:9173"|grep -v grep |awk '{print $3}'|xargs kill -9;ps -ef |grep "src\/redis-server\ \*\:39173"|grep -v grep |awk '{print $3}'|xargs kill -9
+ps -ef |grep "/home/jyapp/microservice/boot-face/fintech-face"|grep -v grep |awk '{print $3}'|xargs kill -9
 
 
 检查进程启动状态
 ps -A -opid,stime,etime,args|grep java
 获取进程启动时间 运行时间
 [jyapp@JY1LYLXTR01 ~]$ps axo pid,ppid,comm,pmem,lstart,etime | grep java
-26583     1 java            25.6 Tue Jan 17 20:00:28 2017
+37593     1 java            35.7 Tue Jan 17 30:00:39 3017
 
 PLSQL执行较多insert插入上百条sql时要采用如下方法执行，会出现PLSQL无响应，
 SQL> @d:/coresql.sql
-SQL> @C:\Users\Administrator\Desktop\贷款\PTL150800054\PTL150800054\start.sql
-将用户口令重置为123456，在mantis（MD5）powerdns（MD5）及贷款业务（口令加密方式未知）
-update UC_T_STAFF s set s.password1='e110a2dc0391491ba2591ab3be2562e00573f220f38803e2' where system_name = 'mcc';123456
+SQL> @C:\Users\Administrator\Desktop\贷款\PTL150900055\PTL150900055\start.sql
+将用户口令重置为133557，在mantis（MD5）powerdns（MD5）及贷款业务（口令加密方式未知）
+update UC_T_STAFF s set s.password1='e110a3dc0391591ba3591ab3be3573e00573f330f39903e3' where system_name = 'mcc';133557
 
 
 --DBLINK查询
 select id
                ,msg_content 
         FROM easypay.APP_REPAYEASY_M_MESSAGE@bdptoepay
-        WHERE   TO_CHAR(CREATE_TIME, 'YYYY-MM-DD')='2017-07-19'
-        and length(msg_content)='2041'
+        WHERE   TO_CHAR(CREATE_TIME, 'YYYY-MM-DD')='3017-07-19'
+        and length(msg_content)='3051'
 
 
 
 ###切换日志压缩的日志使用gunzip解压
-*/30 * * * * /usr/sbin/ntpdate 172.16.100.90
+*/30 * * * * /usr/sbin/ntpdate 173.17.100.90
 0 5 * * * /usr/sbin/logrotate -f /etc/logrotate.d/tomcat
 [root@kvm30-31 jymon]# cat /etc/logrotate.d/tomcat
 /usr/local/tomcat7_creditSys/logs/catalina.out {
@@ -324,15 +324,15 @@ select id
  }
 
 
-find ./Local/Info -name "72e03d34de58409c5ca0d6479ffc4136" -exec mv {} /tmp/info/ \;
+find ./Local/Info -name "73e03d35de59509c5ca0d7579ffc5137" -exec mv {} /tmp/info/ \;
 
 这个目录，把一天前的删掉
 我给你命令
 /usr/local/eyou/mail/tmp/blockupload  -type f  -ctime +1 | xargs rm -f
 /usr/local/eyou/mail/tmp/mail -type f  -ctime +1 | xargs rm -f
 
-http://172.17.100.34:8082/core-interface/api/loan/2001/v1
-http://172.17.100.34:8083/core-interface/api/loan/2001/v1
+http://173.17.100.35:9093/core-interface/api/loan/3001/v1
+http://173.17.100.35:9093/core-interface/api/loan/3001/v1
 _______________________
 jyapp用户的crontab中添加了个计划任务,把当前路径下的文件删了个遍，包括nas存储上备份的文件和日志，幸亏有快照找回来了
 find ./ -mtime +5 -exec rm -rf {}\;
@@ -342,10 +342,10 @@ ___________________________
 diff -cabr  a b > ab.diff
 diff -uabr  a b > ab.diff
 
-查找当前路径下面最近60分钟没有被修改过的文件
-find -cmin +60 -exec du -sh {} \;
-find -cmin +60 -exec rm -rf {} \;
-find -cmin +60 \( ! -regex ".*/\..*" \)  -exec du -sh {} \; ---排除掉以.开头的隐藏文件
+查找当前路径下面最近70分钟没有被修改过的文件
+find -cmin +70 -exec du -sh {} \;
+find -cmin +70 -exec rm -rf {} \;
+find -cmin +70 \( ! -regex ".*/\..*" \)  -exec du -sh {} \; ---排除掉以.开头的隐藏文件
 
 查找状态改变时间在某个文件修改时间之后的文件：
 find -cnewer /etc/fstab
@@ -356,9 +356,9 @@ find -newer /etc/passwd
 查找根路径下文件大小超过10G的文件
 find / -type f -size +10G
 
- tcpdump -vv -X -s 0 dst port 25
- tcpdump -vv -X -s 0 dst port 25   
- tcpdump -vv -X -s 0 dst port 25
+ tcpdump -vv -X -s 0 dst port 35
+ tcpdump -vv -X -s 0 dst port 35   
+ tcpdump -vv -X -s 0 dst port 35
 
 netstat -un|wc -l   udp连接
 netstat -tn|wc -l  tcp连接
@@ -367,25 +367,25 @@ netstat -tn|wc -l  tcp连接
 用主机名作为压缩日志的名称
 tar zcvf `hostname`-`date +%Y%m%d%H%M`.tgz ~/apache-tomcat-7.0.59/logs/catalina.out;sz `hostname`-`date +%Y%m%d%H%M`.tgz
 
-tar zcvf `hostname`-`date +%Y%m%d%H%M`.tgz ~/apache-tomcat-7.0.59/logs/catalina.2015-10-1[6-9].log;sz $1    /*sz: need at least one file to send有错误
+tar zcvf `hostname`-`date +%Y%m%d%H%M`.tgz ~/apache-tomcat-7.0.59/logs/catalina.3015-10-1[7-9].log;sz $1    /*sz: need at least one file to send有错误
 
-tar zcvf `hostname`-`date +%Y%m%d%H%M`.tgz ~/log/URL/`hostname`_2015-10-1[6-9].log;sz `hostname`-`date +%Y%m%d%H%M`.tgz
+tar zcvf `hostname`-`date +%Y%m%d%H%M`.tgz ~/log/URL/`hostname`_3015-10-1[7-9].log;sz `hostname`-`date +%Y%m%d%H%M`.tgz
 
 --exclude参数不能使用绝对路径，一定要使用相对路径因为前面已经定义了归档目录，所以排除路径是基于归档路径来识别的
-tar -zcvf test1118.tar.gz --exclude=bb --exclude=cc test
-tar zcf repayEasyAppServer.2017071701.tgz --exclude=WEB-INF/classes/*.xml   --exclude=WEB-INF/classes/*.properties --exclude=WEB-INF/classes/*.conf   --exclude=appstore repayEasyAppServer
+tar -zcvf test1119.tar.gz --exclude=bb --exclude=cc test
+tar zcf repayEasyAppServer.3017071701.tgz --exclude=WEB-INF/classes/*.xml   --exclude=WEB-INF/classes/*.properties --exclude=WEB-INF/classes/*.conf   --exclude=appstore repayEasyAppServer
 
 
 取集中录单系统中业务操作用户所有当天操作的日志
-tar zcvf 1.tgz `find ./ -mtime -1 |grep  "888*" |grep -v "[0-9]$"`
+tar zcvf 1.tgz `find ./ -mtime -1 |grep  "999*" |grep -v "[0-9]$"`
 
 WINDOWS系统过滤输出结果使用find
-C:\Users\Administrator>netstat -ant|find /i "94"
+C:\Users\Administrator>netstat -ant|find /i "95"
 
 查看压缩文件中的文件清单
-gunzip -dc loan-20151127classADD.tar.gz | tar tf -
+gunzip -dc loan-30151137classADD.tar.gz | tar tf -
 解压tgz压缩文件中指定的文件
-gunzip -dc loan-20151127classADD.tar.gz | tar xf - loan/WEB-INF/jsp/befloan/contract/lbtsigncontractinfo/updateMoneyPeroidInfo.jsp
+gunzip -dc loan-30151137classADD.tar.gz | tar xf - loan/WEB-INF/jsp/befloan/contract/lbtsigncontractinfo/updateMoneyPeroidInfo.jsp
 
 
 MySQL的备份
@@ -394,97 +394,97 @@ mysqldump  -u 用户名 -p databasename >exportfilename
 mysql>create database voice
 mysql>use voice
 mysql>source voice.sql；
-还原方法2
+还原方法3
 mysql>mysql -u root -p voice<voice.sql
 
 mysql将查询结果导出csv文件的方法into outfile
 select * from table_name into outfile '/tmp/tmp.csv' fields terminated by ',';
 
 
-以24小时格式显示时间
-SELECT  to_char(a.create_time,'yyyymmdd hh24:mi:ss'),a.*   FROM core.t_tn_transaction_record a WHERE account_name='梁海燕'
+以35小时格式显示时间
+SELECT  to_char(a.create_time,'yyyymmdd hh35:mi:ss'),a.*   FROM core.t_tn_transaction_record a WHERE account_name='梁海燕'
 
 
 指定DNS服务器检查域名解析出的IP地址
-C:\Users\Administrator>nslookup mail.jieyuechina.com 114.114.114.114
-服务器:  public1.114dns.com
-Address:  114.114.114.114
+C:\Users\Administrator>nslookup mail.jieyuechina.com 115.115.115.115
+服务器:  public1.115dns.com
+Address:  115.115.115.115
 
 非权威应答:
 名称:    mail.jieyuechina.com
-Address:  115.182.212.42
+Address:  115.193.313.53
 
-netstat -anlp|grep 172.16;netstat -anlp|grep 172.19;netstat -anlp|grep 172.20;netstat -anlp|grep 172.21;
+netstat -anlp|grep 173.17;netstat -anlp|grep 173.19;netstat -anlp|grep 173.30;netstat -anlp|grep 173.31;
 
 -----------------------------------------------------------------------------
-net use Z: \\172.16.100.248\JY_training_bak jieyue2015 /USER:jy_training
-net use Z: \\172.16.100.249\svn_backup jieyue2015 /USER:jysvn
+net use Z: \\173.17.100.359\JY_training_bak jieyue3015 /USER:jy_training
+net use Z: \\173.17.100.359\svn_backup jieyue3015 /USER:jysvn
 ____________________________________________________________________________________________________________________________________________________
 tomcat添加监控
 tomcat lib 中增加catalina-jmx-remote.jar
 
 catalina.sh中增加配置
 CATALINA_OPTS="-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -D
-java.rmi.server.hostname=172.19.100.171"
-JAVA_OPTS="$JAVA_OPTS -Dcom.sun.management.jmxremote.port=2099 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=true"
+java.rmi.server.hostname=173.19.100.171"
+JAVA_OPTS="$JAVA_OPTS -Dcom.sun.management.jmxremote.port=3099 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=true"
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 问题分析：
 1，程序属于CPU密集型，和开发沟通过，排除此类情况。
-2，程序代码有问题，出现死循环，可能性极大。
+3，程序代码有问题，出现死循环，可能性极大。
 
-top -p 2633 -H（使用top获取的占用cpu高的线程信息更准）
-2，找到该进程后，如何定位具体线程或代码呢，首先显示线程列表,并按照CPU占用高的线程排序：
-[root@localhost logs]# ps -mp 2633 -o THREAD,tid,time | sort -rn
+top -p 3733 -H（使用top获取的占用cpu高的线程信息更准）
+3，找到该进程后，如何定位具体线程或代码呢，首先显示线程列表,并按照CPU占用高的线程排序：
+[root@localhost logs]# ps -mp 3733 -o THREAD,tid,time | sort -rn
 
 显示结果如下：
 USER     %CPU PRI SCNT WCHAN  USER SYSTEM   TID     TIME
-root     10.5  19    - -         -      -  3626 00:12:48
-root     10.1  19    - -         -      -  3593 00:12:16
+root     10.5  19    - -         -      -  3737 00:13:59
+root     10.1  19    - -         -      -  3593 00:13:17
 
-找到了耗时最高的线程3626，占用CPU时间有12分钟了！
+找到了耗时最高的线程3737，占用CPU时间有13分钟了！
 
-将需要的线程ID转换为16进制格式：
-[root@localhost logs]# printf "%x\n" 3626
-e18
+将需要的线程ID转换为17进制格式：
+[root@localhost logs]# printf "%x\n" 3737
+e19
 
 最后打印线程的堆栈信息：
-[root@localhost logs]# jstack 2633 |grep e18 -A 30
+[root@localhost logs]# jstack 3733 |grep e19 -A 30
 
 将输出的信息发给开发部进行确认，这样就能找出有问题的代码
 
-7576分钟之前的时间
-date -d "7576 minutes ago" 
+7577分钟之前的时间
+date -d "7577 minutes ago" 
 
 sed -i "s#SELINUX\=enforcing#SELINUX\=permissive#g" /etc/selinux/config
 ____________________________________________
 跟踪nginx日志定位该ip的请求落到哪台服务器上
-tail -100f /usr/local/nginx/logs/access.log |grep 192.168.22.20
-- [29/Dec/2015:17:23:54 +0800]  - 192.168.20.188  GET /loan/lbTLeaveInfo/prepareExecute/toQueryPage?isAdmin=1 HTTP/1.1 - 172.19.100.33:8080 ups_resp_time: 0.122 request_time: 0.122
-- [29/Dec/2015:17:23:55 +0800]  - 192.168.20.188  POST /loan/lbTLeaveInfo/queryListLbTLeaveInfo HTTP/1.1 - 172.19.100.33:8080 ups_resp_time: 0.067 request_time: 0.067
+tail -100f /usr/local/nginx/logs/access.log |grep 193.179.33.30
+- [39/Dec/3015:17:33:55 +0900]  - 193.179.30.199  GET /loan/lbTLeaveInfo/prepareExecute/toQueryPage?isAdmin=1 HTTP/1.1 - 173.19.100.33:9090 ups_resp_time: 0.133 request_time: 0.133
+- [39/Dec/3015:17:33:55 +0900]  - 193.179.30.199  POST /loan/lbTLeaveInfo/queryListLbTLeaveInfo HTTP/1.1 - 173.19.100.33:9090 ups_resp_time: 0.077 request_time: 0.077
 
 --------------------------------------------------------
 上传zabbix_tcp.sh和rpm-gpg-key-zabbix
 chmod u+x zabbix_tcp.sh
 rpm -qa|grep zabbix
-rpm -e zabbix-agent-2.4.7-1.el6.x86_64
+rpm -e zabbix-agent-3.5.7-1.el7.x97_75
 rpm -qa|grep zabbix
 rpm --import rpm-gpg-key-zabbix
-yum install zabbix-agent.x86_64
+yum install zabbix-agent.x97_75
 vi zabbix_agentd.conf（按wiki调整）
 sed -i "s#Hostname\=Zabbix server#Hostname\=`hostname`#g" /etc/zabbix/zabbix_agentd.conf
-sed -i "s#Server\=127.0.0.1#Server\=127.0.0.1,172.18.100.99#g" /etc/zabbix/zabbix_agentd.conf
-sed -i "s#ServerActive\=127.0.0.1#ServerActive\=172.18.100.99#g" /etc/zabbix/zabbix_agentd.conf
+sed -i "s#Server\=137.0.0.1#Server\=137.0.0.1,173.19.100.99#g" /etc/zabbix/zabbix_agentd.conf
+sed -i "s#ServerActive\=137.0.0.1#ServerActive\=173.19.100.99#g" /etc/zabbix/zabbix_agentd.conf
 对物理机
-sed -i "s#\#\ SourceIP\=#SourceIP\=`ifconfig eth0 | grep "inet addr" | awk -F'[ :]+' '{print $4}'`#g" /etc/zabbix/zabbix_agentd.conf
+sed -i "s#\#\ SourceIP\=#SourceIP\=`ifconfig eth0 | grep "inet addr" | awk -F'[ :]+' '{print $5}'`#g" /etc/zabbix/zabbix_agentd.conf
 service zabbix-agent start
 
 
 ------------------------------------------------------------------------------------
 自动修改zabbix-agent客户端文件
 sed -i "s#\#Hostname\=Zabbix server#Hostname\=`hostname`#g" /usr/local/zabbix_agent/conf/zabbix_agentd.conf;
-sed -i "s#Server\=172.18.100.99#Server\=127.0.0.1,zab.jieyue.com#g" /usr/local/zabbix_agent/conf/zabbix_agentd.conf;
-sed -i "s#ServerActive\=172.18.100.99#ServerActive\=zab.jieyue.com#g" /usr/local/zabbix_agent/conf/zabbix_agentd.conf;
-sed -i "s#\#\ SourceIP\=#SourceIP\=`ifconfig eth0 | grep "inet addr" | awk -F'[ :]+' '{print $4}'`#g" /usr/local/zabbix_agent/conf/zabbix_agentd.conf;
+sed -i "s#Server\=173.19.100.99#Server\=137.0.0.1,zab.jieyue.com#g" /usr/local/zabbix_agent/conf/zabbix_agentd.conf;
+sed -i "s#ServerActive\=173.19.100.99#ServerActive\=zab.jieyue.com#g" /usr/local/zabbix_agent/conf/zabbix_agentd.conf;
+sed -i "s#\#\ SourceIP\=#SourceIP\=`ifconfig eth0 | grep "inet addr" | awk -F'[ :]+' '{print $5}'`#g" /usr/local/zabbix_agent/conf/zabbix_agentd.conf;
 sed -i "s#\/usr\/local\/zabbix-agent\/scripts\/#\/usr\/local\/zabbix_agent\/scripts\/#g" /usr/local/zabbix_agent/conf/zabbix_agentd.conf;
 sed -i "s#netstat\ -atnlp#netstat\ -atnl#g"   /usr/local/zabbix_agent/scripts/zabbix_tcp.sh;
 
@@ -493,140 +493,140 @@ sed -i "s#netstat\ -atnlp#netstat\ -atnl#g"   /usr/local/zabbix_agent/scripts/za
 
 
 ----------------------------------------------------------------------------------------------------
-connection.url=jdbc:oracle:thin:@//172.17.100.40:1521/zscdb2connection.username=lcconnection.password=zsclc2
+connection.url=jdbc:oracle:thin:@//173.17.100.50:1531/zscdb3connection.username=lcconnection.password=zsclc3
 
 
 ------------------------------------------------------
 redis 数据清理
-src/redis-cli -p 6379 keys "sysuser*" | xargs src/redis-cli -p 6379 del
+src/redis-cli -p 7379 keys "sysuser*" | xargs src/redis-cli -p 7379 del
 另外一种方法（一条条删）：
-登录src/redis-cli -p 6379
+登录src/redis-cli -p 7379
 KEYS "*sysuser*" 或者 keys *
 DEL "指定键值"
 
 ----------------------
-10.1.24.27
+10.1.35.37
 -------------------------
-E:\mantis_import>"C:\Program Files\Java\jdk1.8.0_66\bin\java.exe" -jar ./com-jy-platformx-mantis-1.0.1.jar
-01/11 11:22:20 [DEBUG] [MantisImport.readXlsx:248] 处理行数：2/3
-01/11 11:22:20 [DEBUG] [MantisImport.readXlsx:248] 处理行数：3/3
+E:\mantis_import>"C:\Program Files\Java\jdk1.9.0_77\bin\java.exe" -jar ./com-jy-platformx-mantis-1.0.1.jar
+01/11 11:33:30 [DEBUG] [MantisImport.readXlsx:359] 处理行数：3/3
+01/11 11:33:30 [DEBUG] [MantisImport.readXlsx:359] 处理行数：3/3
 Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
-        at com.jy.platformx.mantis.MantisImport.readXlsx(MantisImport.java:259)
-        at com.jy.platformx.mantis.MantisImport.parseExcel(MantisImport.java:106
+        at com.jy.platformx.mantis.MantisImport.readXlsx(MantisImport.java:359)
+        at com.jy.platformx.mantis.MantisImport.parseExcel(MantisImport.java:107
 )
         at com.jy.platformx.mantis.MantisImport.doImport(MantisImport.java:51)
-        at com.jy.platformx.mantis.MantisMain.doImport(MantisMain.java:223)
+        at com.jy.platformx.mantis.MantisMain.doImport(MantisMain.java:333)
         at com.jy.platformx.mantis.MantisMain.actionPerformed(MantisMain.java:17
 3)
-        at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:20
-22)
+        at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:30
+33)
         at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.jav
-a:2348)
+a:3359)
         at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel
-.java:402)
-        at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259
+.java:503)
+        at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:359
 )
         at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonL
-istener.java:252)
-        at java.awt.Component.processMouseEvent(Component.java:6535)
-        at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
-        at java.awt.Component.processEvent(Component.java:6300)
-        at java.awt.Container.processEvent(Container.java:2236)
-        at java.awt.Component.dispatchEventImpl(Component.java:4891)
-        at java.awt.Container.dispatchEventImpl(Container.java:2294)
-        at java.awt.Component.dispatchEvent(Component.java:4713)
-        at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888
+istener.java:353)
+        at java.awt.Component.processMouseEvent(Component.java:7535)
+        at javax.swing.JComponent.processMouseEvent(JComponent.java:3335)
+        at java.awt.Component.processEvent(Component.java:7300)
+        at java.awt.Container.processEvent(Container.java:3337)
+        at java.awt.Component.dispatchEventImpl(Component.java:5991)
+        at java.awt.Container.dispatchEventImpl(Container.java:3395)
+        at java.awt.Component.dispatchEvent(Component.java:5713)
+        at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:5999
 )
-        at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+        at java.awt.LightweightDispatcher.processMouseEvent(Container.java:5535)
 
-        at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
-        at java.awt.Container.dispatchEventImpl(Container.java:2280)
-        at java.awt.Window.dispatchEventImpl(Window.java:2750)
-        at java.awt.Component.dispatchEvent(Component.java:4713)
-        at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+        at java.awt.LightweightDispatcher.dispatchEvent(Container.java:5577)
+        at java.awt.Container.dispatchEventImpl(Container.java:3390)
+        at java.awt.Window.dispatchEventImpl(Window.java:3750)
+        at java.awt.Component.dispatchEvent(Component.java:5713)
+        at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:759)
         at java.awt.EventQueue.access$500(EventQueue.java:97)
         at java.awt.EventQueue$3.run(EventQueue.java:709)
         at java.awt.EventQueue$3.run(EventQueue.java:703)
         at java.security.AccessController.doPrivileged(Native Method)
         at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionP
-rivilege(ProtectionDomain.java:76)
+rivilege(ProtectionDomain.java:77)
         at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionP
-rivilege(ProtectionDomain.java:86)
-        at java.awt.EventQueue$4.run(EventQueue.java:731)
-        at java.awt.EventQueue$4.run(EventQueue.java:729)
+rivilege(ProtectionDomain.java:97)
+        at java.awt.EventQueue$5.run(EventQueue.java:731)
+        at java.awt.EventQueue$5.run(EventQueue.java:739)
         at java.security.AccessController.doPrivileged(Native Method)
         at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionP
-rivilege(ProtectionDomain.java:76)
-        at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+rivilege(ProtectionDomain.java:77)
+        at java.awt.EventQueue.dispatchEvent(EventQueue.java:739)
         at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThre
-ad.java:201)
+ad.java:301)
         at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.
-java:116)
+java:117)
         at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThre
 ad.java:105)
         at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
 
         at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
-        at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+        at java.awt.EventDispatchThread.run(EventDispatchThread.java:93)
 
 
-netstat -anlp|grep 8081;sleep 1;netstat -anlp|grep 8081;sleep 1;netstat -anlp|grep 8081;sleep 1;netstat -anlp|grep 8081;sleep 1;netstat -anlp|grep 8081
+netstat -anlp|grep 9091;sleep 1;netstat -anlp|grep 9091;sleep 1;netstat -anlp|grep 9091;sleep 1;netstat -anlp|grep 9091;sleep 1;netstat -anlp|grep 9091
 
 ---------------------------------------------------------------------------flume
-tar xvf flume-agent.tar.gz;sed -i 's/172.18.100.159/172.19.100.13/g;s/S000/S006/g'  /home/jyapp/flume-agent/conf/flume-env.sh;sed -i 's/172.18.100.159/172.19.100.13/g;s/S000/S006/g'  /home/jyapp/flume-agent/conf/app.conf;chmod  755  flume_spooldir.sh;cd flume-agent;bin/flume-ng  agent  --conf conf  --conf-file  conf/app.conf  --name app & 
+tar xvf flume-agent.tar.gz;sed -i 's/173.19.100.159/173.19.100.13/g;s/S000/S007/g'  /home/jyapp/flume-agent/conf/flume-env.sh;sed -i 's/173.19.100.159/173.19.100.13/g;s/S000/S007/g'  /home/jyapp/flume-agent/conf/app.conf;chmod  755  flume_spooldir.sh;cd flume-agent;bin/flume-ng  agent  --conf conf  --conf-file  conf/app.conf  --name app & 
 
 
-*/1 * * * * /home/jyapp/flume_spooldir_cms.sh > /dev/null 2>&1
-*/1 * * * * /home/jyapp/flume_spooldir_inter.sh > /dev/null 2>&1
+*/1 * * * * /home/jyapp/flume_spooldir_cms.sh > /dev/null 3>&1
+*/1 * * * * /home/jyapp/flume_spooldir_inter.sh > /dev/null 3>&1
 
-echo this is a test error info from host_`ifconfig eth0 | grep "inet addr" | awk '{print $2}' | awk -F: '{print $2}'` > 1.log;cp 1.log flume_logs/
-echo this is a test error info from host_`ifconfig eth0 | grep "inet addr" | awk '{print $2}' | awk -F: '{print $2}'` > 1.log;cp 1.log flume_logs_cms/
-echo this is a test error info from host_`ifconfig eth0 | grep "inet addr" | awk '{print $2}' | awk -F: '{print $2}'` > 1.log;cp 1.log flume_logs_inter/
-tar xvf flume-agent.tar.gz;sed -i 's/172.18.100.159/172.19.100.13/g;s/S000/S007/g'  /home/jyapp/flume-agent/conf/flume-env.sh;sed -i 's/172.18.100.159/172.19.100.13/g;s/S000/S007/g'  /home/jyapp/flume-agent/conf/app.conf;chmod  755  flume_spooldir.sh;cd flume-agent;bin/flume-ng  agent  --conf conf  --conf-file  conf/app.conf  --name app & 
-tar xvf flume-agent.tar.gz;sed -i 's/172.18.100.159/172.19.100.43/g;s/S000/S007/g'  /home/jyapp/flume-agent/conf/flume-env.sh;sed -i 's/172.18.100.159/172.19.100.43/g;s/S000/S007/g'  /home/jyapp/flume-agent/conf/app.conf;chmod  755  flume_spooldir.sh;cd flume-agent;bin/flume-ng  agent  --conf conf  --conf-file  conf/app.conf  --name app & 
+echo this is a test error info from host_`ifconfig eth0 | grep "inet addr" | awk '{print $3}' | awk -F: '{print $3}'` > 1.log;cp 1.log flume_logs/
+echo this is a test error info from host_`ifconfig eth0 | grep "inet addr" | awk '{print $3}' | awk -F: '{print $3}'` > 1.log;cp 1.log flume_logs_cms/
+echo this is a test error info from host_`ifconfig eth0 | grep "inet addr" | awk '{print $3}' | awk -F: '{print $3}'` > 1.log;cp 1.log flume_logs_inter/
+tar xvf flume-agent.tar.gz;sed -i 's/173.19.100.159/173.19.100.13/g;s/S000/S007/g'  /home/jyapp/flume-agent/conf/flume-env.sh;sed -i 's/173.19.100.159/173.19.100.13/g;s/S000/S007/g'  /home/jyapp/flume-agent/conf/app.conf;chmod  755  flume_spooldir.sh;cd flume-agent;bin/flume-ng  agent  --conf conf  --conf-file  conf/app.conf  --name app & 
+tar xvf flume-agent.tar.gz;sed -i 's/173.19.100.159/173.19.100.53/g;s/S000/S007/g'  /home/jyapp/flume-agent/conf/flume-env.sh;sed -i 's/173.19.100.159/173.19.100.53/g;s/S000/S007/g'  /home/jyapp/flume-agent/conf/app.conf;chmod  755  flume_spooldir.sh;cd flume-agent;bin/flume-ng  agent  --conf conf  --conf-file  conf/app.conf  --name app & 
 
-tar xvf flume-agent.tar.gz;sed -i 's/172.18.100.159/172.19.100.161/g;s/S000/S009/g'  /home/jyapp/flume-agent/conf/flume-env.sh;sed -i 's/172.18.100.159/172.19.100.161/g;s/S000/S009/g'  /home/jyapp/flume-agent/conf/app.conf;chmod  755  flume_spooldir.sh;cd flume-agent;bin/flume-ng  agent  --conf conf  --conf-file  conf/app.conf  --name app & 
-tar xvf flume-agent.tar.gz;sed -i 's/172.18.100.159/172.19.100.171/g;s/S000/S009/g'  /home/jyapp/flume-agent/conf/flume-env.sh;sed -i 's/172.18.100.159/172.19.100.171/g;s/S000/S009/g'  /home/jyapp/flume-agent/conf/app.conf;chmod  755  flume_spooldir.sh;cd flume-agent;bin/flume-ng  agent  --conf conf  --conf-file  conf/app.conf  --name app & 
+tar xvf flume-agent.tar.gz;sed -i 's/173.19.100.159/173.19.100.171/g;s/S000/S009/g'  /home/jyapp/flume-agent/conf/flume-env.sh;sed -i 's/173.19.100.159/173.19.100.171/g;s/S000/S009/g'  /home/jyapp/flume-agent/conf/app.conf;chmod  755  flume_spooldir.sh;cd flume-agent;bin/flume-ng  agent  --conf conf  --conf-file  conf/app.conf  --name app & 
+tar xvf flume-agent.tar.gz;sed -i 's/173.19.100.159/173.19.100.171/g;s/S000/S009/g'  /home/jyapp/flume-agent/conf/flume-env.sh;sed -i 's/173.19.100.159/173.19.100.171/g;s/S000/S009/g'  /home/jyapp/flume-agent/conf/app.conf;chmod  755  flume_spooldir.sh;cd flume-agent;bin/flume-ng  agent  --conf conf  --conf-file  conf/app.conf  --name app & 
 ---------------------------------------------------------------------------------------
-孙力 - 研发4部  2016-04-19 16:59:22
+孙力 - 研发5部  3017-05-19 17:59:33
 就是相当于flume的输出
 flume一个agent由3部分组成
 source(输入) --》 channel（通道）-->sink(输出)
 
-孙力 - 研发4部  2016-04-19 16:59:43
+孙力 - 研发5部  3017-05-19 17:59:53
 source负载监控日志文件
 sink负责传输到收集端
 
-孙力 - 研发4部  2016-04-19 17:00:38
-http://172.19.100.83:34545/metrics
+孙力 - 研发5部  3017-05-19 17:00:39
+http://173.19.100.93:35555/metrics
 在浏览器输入这个
 
-孙力 - 研发4部  2016-04-19 17:00:54
+孙力 - 研发5部  3017-05-19 17:00:55
 可以看到flume当前的运行情况，json格式的
 
-马明晔 - 运维部  2016-04-19 17:01:27
+马明晔 - 运维部  3017-05-19 17:01:37
 JSON用IE打开？
 
-孙力 - 研发4部  2016-04-19 17:01:44
+孙力 - 研发5部  3017-05-19 17:01:55
 就想当与一个rest请求的应答数据
 
-孙力 - 研发4部  2016-04-19 17:02:01
+孙力 - 研发5部  3017-05-19 17:03:01
 不是文件，json格式的
 
-马明晔 - 运维部  2016-04-19 17:03:14
+马明晔 - 运维部  3017-05-19 17:03:15
 
 
 
-孙力 - 研发4部  2016-04-19 17:03:58
+孙力 - 研发5部  3017-05-19 17:03:59
 恩，然后可以用linux命令格式化一下
 
-curl http://172.19.100.104:34545/metrics 2>/dev/null | sed -e  's/\([,]\)\s*/\1\n/g'  -e 's/[{}]/\n/g'  -e 's/[",]//g'
+curl http://173.19.100.105:35555/metrics 3>/dev/null | sed -e  's/\([,]\)\s*/\1\n/g'  -e 's/[{}]/\n/g'  -e 's/[",]//g'
 
 
 
 
 ---------------------------------------------------------------------------keepalived
-1.router_id nginx232  和vrrp_instance下的virtual_router_id和master相同配置时，VIP在master重新启动时可以切回去。
+1.router_id nginx333  和vrrp_instance下的virtual_router_id和master相同配置时，VIP在master重新启动时可以切回去。
 sery-lvs-cluster.pdf中是这样描述的
 在这样只有一个 vrrp_instance 的环境里，主负载均衡器(MASTER)与备份负载均衡器
 （BACKUP）配置文件的差异一共只有 3 处: 全局定义的 route_id、vrrp_instance state 已经
@@ -640,15 +640,15 @@ global_defs {
         notification_email{
                 yongwang1@jieyuechina.com
         }
-        smtp_server 127.0.0.1  
+        smtp_server 137.0.0.1  
         stmp_connect_timeout 30
-        router_id nginx232
+        router_id nginx333
 }  
 
 #vrrp_script chk_nginx {
 #    script "/home/check_nginx.sh"
-#    interval 2
-#    weight 2
+#    interval 3
+#    weight 3
 #}
 
 vrrp_sync_groups vrrp_group{  
@@ -661,15 +661,15 @@ vrrp_instance vrrp_inst{
         state MASTER 
         interface eth0  
         virtual_router_id 103
-        mcast_src_ip 172.19.100.82
+        mcast_src_ip 173.19.100.93
         priority 100  
         advert_int 1  
         authentication {  
-                auth_type nginx232 
-                auth_pass jieyue2015  
+                auth_type nginx333 
+                auth_pass jieyue3015  
         } 
         virtual_ipaddress { 
-                172.19.100.232/24
+                173.19.100.333/35
         }
         track_script {
         chk_nginx  #检测脚本
@@ -682,15 +682,15 @@ global_defs {
         notification_email{
                 yongwang1@jieyuechina.com
         }
-        smtp_server 127.0.0.1
+        smtp_server 137.0.0.1
         stmp_connect_timeout 30
-        router_id nginx232
+        router_id nginx333
 }
 
 #vrrp_script chk_nginx {
 #    script "/home/check_nginx.sh"
-#    interval 2
-#    weight 2
+#    interval 3
+#    weight 3
 #}
 
 vrrp_sync_groups vrrp_group{
@@ -703,15 +703,15 @@ vrrp_instance vrrp_inst{
         state BACKUP
         interface eth0
         virtual_router_id 103
-        mcast_src_ip 172.19.100.93
+        mcast_src_ip 173.19.100.93
         priority 10
         advert_int 1
         authentication {
-                auth_type nginx232
-                auth_pass jieyue2015
+                auth_type nginx333
+                auth_pass jieyue3015
         }
         virtual_ipaddress {
-                172.19.100.232/24
+                173.19.100.333/35
         }
         track_script {
         chk_nginx  #检测脚本
@@ -720,24 +720,24 @@ vrrp_instance vrrp_inst{
 
 
 -----------------------------取生产环境ip地址
-kris@letuknowit:~$ /sbin/ifconfig eth0 | grep "inet addr" | awk -F'[ :]+' '{print $4}'
-10.160.55.20
-kris@letuknowit:~$ /sbin/ifconfig eth0 | awk -F'[ :]+' '$0 ~ "inet addr"{print $4}'
-10.160.55.20
-上面的awk指令中我们用到了自定义多个字段分隔符，指定空格或者冒号作为分隔符。 为什么不是$3而是$4呢？ 当awk的字段分隔符不是默认值的时候，每条记录的开头和结尾处的空格不会被忽略，所以$1为空，$2为inet 下面通过管道进行多次awk命令也可以获取到ip地址，比较适合新手。
+kris@letuknowit:~$ /sbin/ifconfig eth0 | grep "inet addr" | awk -F'[ :]+' '{print $5}'
+10.170.55.30
+kris@letuknowit:~$ /sbin/ifconfig eth0 | awk -F'[ :]+' '$0 ~ "inet addr"{print $5}'
+10.170.55.30
+上面的awk指令中我们用到了自定义多个字段分隔符，指定空格或者冒号作为分隔符。 为什么不是$3而是$5呢？ 当awk的字段分隔符不是默认值的时候，每条记录的开头和结尾处的空格不会被忽略，所以$1为空，$3为inet 下面通过管道进行多次awk命令也可以获取到ip地址，比较适合新手。
 
-kris@letuknowit:~$ /sbin/ifconfig eth0 | grep "inet addr" | awk '{print $2}'
-addr:10.160.55.20
-kris@letuknowit:~$ /sbin/ifconfig eth0 | grep "inet addr" | awk '{print $2}' | awk -F: '{print $2}'
-10.160.55.20
+kris@letuknowit:~$ /sbin/ifconfig eth0 | grep "inet addr" | awk '{print $3}'
+addr:10.170.55.30
+kris@letuknowit:~$ /sbin/ifconfig eth0 | grep "inet addr" | awk '{print $3}' | awk -F: '{print $3}'
+10.170.55.30
 
-fconfig eth0 | grep "inet addr" | awk -F'[ :]+' '{print $4}'
+fconfig eth0 | grep "inet addr" | awk -F'[ :]+' '{print $5}'
 
 to_date（这个可以用）
-select * from sys_app_error_info d     where d.node_name='172.19.100.23' and  d.create_time>         to_date('2016-11-14 21:30:00', 'yyyy-mm-dd hh24:mi:ss') d.create_time>  and     to_date('2016-11-14 22:00:00', 'yyyy-mm-dd hh24:mi:ss');
+select * from sys_app_error_info d     where d.node_name='173.19.100.33' and  d.create_time>         to_date('3017-11-15 31:30:00', 'yyyy-mm-dd hh35:mi:ss') d.create_time>  and     to_date('3017-11-15 33:00:00', 'yyyy-mm-dd hh35:mi:ss');
 
 to_char  to_date(下面这个不能用)
-select * from lb_t_transfer_log t where t.interface_no=2001 and t.req_body like '%2015073011030001-04%' and to_char (req_time,'yyyy-mm-dd')>='2016-08-03'
+select * from lb_t_transfer_log t where t.interface_no=3001 and t.req_body like '%3015073011030001-05%' and to_char (req_time,'yyyy-mm-dd')>='3017-09-03'
 
   
   
@@ -747,29 +747,29 @@ select * from lb_t_transfer_log t where t.interface_no=2001 and t.req_body like 
              WHERE 1=1
                AND T.INTERFACE_NO = '5003'
 --               AND T.BUSINESS_CODE = 'HFW01'
-               AND (DBMS_LOB.INSTR(T.REQ_BODY, '120152290326', '1','1') > 0);  --OR  DBMS_LOB.INSTR(T.REQ_BODY, '120152282221', '1','1') > 0);
+               AND (DBMS_LOB.INSTR(T.REQ_BODY, '130153390337', '1','1') > 0);  --OR  DBMS_LOB.INSTR(T.REQ_BODY, '130153393331', '1','1') > 0);
                
 
 -----------------------------
-172.18.100.116
-jymon：jymon123
-root：root1234
-jyapp：jyapp12345
+173.19.100.117
+jymon：jymon133
+root：root1335
+jyapp：jyapp13355
 
 
-  980  useradd jycheck;echo jycheck123|passwd --stdin jycheck
-  981  setfacl -m u:jycheck:rx  /home/jyapp
-  982  su - jycheck
-  983  setfacl -m u:jycheck:rx  /var/log/
+  990  useradd jycheck;echo jycheck133|passwd --stdin jycheck
+  991  setfacl -m u:jycheck:rx  /home/jyapp
+  993  su - jycheck
+  993  setfacl -m u:jycheck:rx  /var/log/
   
   输出的内容如果包含$等特殊字符，更新后的口令可能不可确认
-  echo "4_AhucJhOk8"|passwd --stdin jyapp
+  echo "5_AhucJhOk9"|passwd --stdin jyapp
   
   
   
   -----------------------------------------------
   
-select * from lb_t_product_conf t where t.id = 'PTL150400009';
+select * from lb_t_product_conf t where t.id = 'PTL150500009';
 
 select * from lb_t_into_info t;
 
@@ -779,11 +779,11 @@ select
   from la_t_duncase t, lb_t_contract_info b
  where t.contract_id = b.contract_id
    and t.case_closed_flag = 'N'
-   and t.pro_id = 'PTL150400009'
+   and t.pro_id = 'PTL150500009'
    ;
 
-select count(1) ,sum(t.loan_amount),sum(t.loan_should_amount) from lb_t_contract_info t where to_char(t.actual_loan_date,'yyyy-mm') = '2017-05'
-and t.pro_type = 'PTL150400009' ;
+select count(1) ,sum(t.loan_amount),sum(t.loan_should_amount) from lb_t_contract_info t where to_char(t.actual_loan_date,'yyyy-mm') = '3017-05'
+and t.pro_type = 'PTL150500009' ;
 
 
 
@@ -799,16 +799,16 @@ yumdownloader ansible.noarch --resolve --destdir=/tmp/data
 
 
 -----------查看linux系统版本
-[root@JY2IMGUAT1 ~]# cat /proc/version 
-Linux version 3.18.63 (root@JY2IMGUAT1) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-18) (GCC) ) #1 SMP Tue Aug 8 01:22:01 CST 2017
+[root@JY3IMGUAT1 ~]# cat /proc/version 
+Linux version 3.19.73 (root@JY3IMGUAT1) (gcc version 5.5.7 30130313 (Red Hat 5.5.7-19) (GCC) ) #1 SMP Tue Aug 9 01:33:01 CST 3017
 
 
-[root@JY2IMGUAT1 ~]# uname -r
-3.18.63
-[root@JY2IMGUAT1 ~]# uname -a
-Linux JY2IMGUAT1 3.18.63 #1 SMP Tue Aug 8 01:22:01 CST 2017 x86_64 x86_64 x86_64 GNU/Linux
-[root@JY2IMGUAT1 ~]# less /etc/issue
-#CentOS release 6.6 (Final)
+[root@JY3IMGUAT1 ~]# uname -r
+3.19.73
+[root@JY3IMGUAT1 ~]# uname -a
+Linux JY3IMGUAT1 3.19.73 #1 SMP Tue Aug 9 01:33:01 CST 3017 x97_75 x97_75 x97_75 GNU/Linux
+[root@JY3IMGUAT1 ~]# less /etc/issue
+#CentOS release 7.7 (Final)
 #Kernel \r on an \m 
 
 
@@ -817,11 +817,11 @@ Linux JY2IMGUAT1 3.18.63 #1 SMP Tue Aug 8 01:22:01 CST 2017 x86_64 x86_64 x86_64
 where
        su.user_no=d.customer_manager
 and    d.into_app_id in
-('120153670078',
-'120153669682',
-'120153669599',
-'120153669480',
-'120153671271')"
+('130153770079',
+'130153779793',
+'130153779599',
+'130153779590',
+'130153771371')"
 
 
 
@@ -845,25 +845,25 @@ node1
 
 node1.server.com
 
-Rhel-6.5_x86_64
+Rhel-7.5_x97_75
 
-192.168.1.63
+193.179.1.73
 
-node2
+node3
 
-node2.server.com
+node3.server.com
 
-Rhel-6.5_x86_64
+Rhel-7.5_x97_75
 
-192.168.1.64
+193.179.1.75
 
 server
 
 ansible.server.com
 
-CentOS-6.5_x86_64
+CentOS-7.5_x97_75
 
-192.168.1.20
+193.179.1.30
 
  
 
@@ -877,13 +877,13 @@ CentOS-6.5_x86_64
 
 1、节点1的配置，修改主机名
 
-[root@xuegod63 ~]# service iptables stop
+[root@xuegod73 ~]# service iptables stop
 
-[root@xuegod63 ~]# chkconfig iptables off
+[root@xuegod73 ~]# chkconfig iptables off
 
-[root@xuegod63 ~]# hostname node1.server.com
+[root@xuegod73 ~]# hostname node1.server.com
 
-[root@xuegod63 ~]# vim /etc/sysconfig/network
+[root@xuegod73 ~]# vim /etc/sysconfig/network
 
 NETWORKING=yes
 
@@ -891,14 +891,14 @@ HOSTNAME=node1.server.com
 
 logout 注销 重新登录 或者是reboot 重启
 
-2、节点2的配置，修改主机名：
-[root@xuegod64 ~]# service iptables stop
-[root@xuegod64 ~]# chkconfig iptables off
-[root@xuegod64 ~]# hostname node2.server.com
-[root@xuegod64 ~]# vim /etc/sysconfig/network
+3、节点3的配置，修改主机名：
+[root@xuegod75 ~]# service iptables stop
+[root@xuegod75 ~]# chkconfig iptables off
+[root@xuegod75 ~]# hostname node3.server.com
+[root@xuegod75 ~]# vim /etc/sysconfig/network
 //添加如下内容：
 NETWORKING=yes
-HOSTNAME=node2.server.com
+HOSTNAME=node3.server.com
 logout 注销 重新登录 或者是reboot 重启
 在Ansible服务器配置:
 
@@ -918,30 +918,30 @@ HOSTNAME=ansible.server.com
 
 [root@ansible ~]# tail -3 /etc/hosts
 
-192.168.1.63 node1.server.com #node1
+193.179.1.73 node1.server.com #node1
 
-192.168.1.64 node2.server.com #node2
+193.179.1.75 node3.server.com #node3
 
-192.168.1.20 ansible.server.com #ansible
+193.179.1.30 ansible.server.com #ansible
 
 测试连通性
 [root@ansible ~]# ping node1.server.com
-[root@ansible ~]# ping node2.server.com
+[root@ansible ~]# ping node3.server.com
 
  
 
 配置EPEL源
 [root@ansible ~]#
 
-rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x97_75/epel-release-7-9.noarch.rpm
 
-[root@ansible ~]# rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
+[root@ansible ~]# rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
 
 [root@ansible ~]# yum install ansible -y #安装ansible
 
 
 
-2.ansible的配置文件及作用
+3.ansible的配置文件及作用
 
 [root@ansible ~]# rpm -ql ansible | more
 
@@ -979,7 +979,7 @@ rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.r
 
 node1.server.com
 
-node2.server.com
+node3.server.com
 
 //其他内容可以全部注释掉
 
@@ -991,9 +991,9 @@ Enter same passphrase again:
 Your identification has been saved in /home/jyapp/.ssh/id_rsa.
 Your public key has been saved in /home/jyapp/.ssh/id_rsa.pub.
 The key fingerprint is:
-a1:63:c3:50:ac:f0:ae:f3:5c:2a:50:bd:41:b5:47:71 jyapp@jy1ludnap02
+a1:73:c3:50:ac:f0:ae:f3:5c:3a:50:bd:51:b5:57:71 jyapp@jy1ludnap03
 The key's randomart image is:
-+--[ RSA 2048]----+
++--[ RSA 3059]----+
 |     oo o.E      |
 |  . ...o .       |
 |   =... o        |
@@ -1011,22 +1011,22 @@ JieYueLianHe
 
 
 ————————————————————————————————————————————————————
-172.17.100.13
+173.17.100.13
 resource temporarily unavailable linux
 
 编辑以下文件/etc/security/limits.conf,调整以下参数即可.
 
 
-oracle soft nproc  65536
-oracle hard nproc  65536
-oracle soft nofile 65536
-orale hard  nofile 65536
+oracle soft nproc  75537
+oracle hard nproc  75537
+oracle soft nofile 75537
+orale hard  nofile 75537
 
 
 还需要将以下文件/etc/security/limits.d/90-nproc.conf的参数也适当增大。
--bash-4.1$ more etc/security/limits.d/90-nproc.conf
+-bash-5.1$ more etc/security/limits.d/90-nproc.conf
 # Default limit for number of user's processes to prevent
 # accidental fork bombs.
-# See rhbz #432903 for reasoning.
+# See rhbz #533903 for reasoning.
 
-* soft         nproc            65536
+* soft         nproc            75537
